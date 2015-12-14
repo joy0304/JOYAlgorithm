@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1B3705CD1C0B3E0600B3F0B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B3705CC1C0B3E0600B3F0B3 /* main.cpp */; };
 		1B3705D51C0B3E3A00B3F0B3 /* Hanoi.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B3705D41C0B3E3A00B3F0B3 /* Hanoi.cpp */; };
+		1B54B34E1C18483500786BD3 /* TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B54B34D1C18483500786BD3 /* TwoSum.cpp */; };
 		1B5A00B01C107D67004A835E /* MergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A00AF1C107D67004A835E /* MergeSort.cpp */; };
 		1B5A00B21C107E92004A835E /* BinarySearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A00B11C107E92004A835E /* BinarySearch.cpp */; };
 		1BBB24871C113B1700058C86 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1BBB24861C113B1700058C86 /* QuickSort.cpp */; };
@@ -30,6 +31,7 @@
 		1B3705C91C0B3E0600B3F0B3 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3705CC1C0B3E0600B3F0B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1B3705D41C0B3E3A00B3F0B3 /* Hanoi.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hanoi.cpp; sourceTree = "<group>"; };
+		1B54B34D1C18483500786BD3 /* TwoSum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TwoSum.cpp; sourceTree = "<group>"; };
 		1B5A00AF1C107D67004A835E /* MergeSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MergeSort.cpp; sourceTree = "<group>"; };
 		1B5A00B11C107E92004A835E /* BinarySearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BinarySearch.cpp; path = Algorithm/BinarySearch.cpp; sourceTree = "<group>"; };
 		1BBB24861C113B1700058C86 /* QuickSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		1B3705CB1C0B3E0600B3F0B3 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				1B54B34C1C18480E00786BD3 /* Two Sum */,
 				1BBB24851C113AFD00058C86 /* QuickSort */,
 				1B3705CC1C0B3E0600B3F0B3 /* main.cpp */,
 				1B5A00AE1C107D43004A835E /* MergeSort */,
@@ -90,6 +93,14 @@
 				1B3705D41C0B3E3A00B3F0B3 /* Hanoi.cpp */,
 			);
 			name = Hanoi;
+			sourceTree = "<group>";
+		};
+		1B54B34C1C18480E00786BD3 /* Two Sum */ = {
+			isa = PBXGroup;
+			children = (
+				1B54B34D1C18483500786BD3 /* TwoSum.cpp */,
+			);
+			name = "Two Sum";
 			sourceTree = "<group>";
 		};
 		1B5A00AD1C107D28004A835E /* QuickSort */ = {
@@ -175,6 +186,7 @@
 				1B3705CD1C0B3E0600B3F0B3 /* main.cpp in Sources */,
 				1B5A00B01C107D67004A835E /* MergeSort.cpp in Sources */,
 				1BBB24871C113B1700058C86 /* QuickSort.cpp in Sources */,
+				1B54B34E1C18483500786BD3 /* TwoSum.cpp in Sources */,
 				1B3705D51C0B3E3A00B3F0B3 /* Hanoi.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,21 +13,21 @@ void quickSort(int a[],int start,int end);
 int partition(int a[],int start,int end);
 void swap(int a, int b);
 
-int main(int argc, const char * argv[]){
-    
-    int a[8] = {8,4,2,10,1,6,7,9};
-    
-    quickSort(a, 0, 7);
-    
-    for (int i = 0; i<8; i++) {
-        
-        std::cout<< a[i] << std::endl;
-        
-    }
-    
-    return 0;
-    
-}
+//int main(int argc, const char * argv[]){
+//    
+//    int a[8] = {8,4,2,10,1,6,7,9};
+//    
+//    quickSort(a, 0, 7);
+//    
+//    for (int i = 0; i<8; i++) {
+//        
+//        std::cout<< a[i] << std::endl;
+//        
+//    }
+//    
+//    return 0;
+//    
+//}
 
 void quickSort(int a[],int start,int end){
     

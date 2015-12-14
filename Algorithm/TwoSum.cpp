@@ -12,18 +12,18 @@
 #include <map>
 #include <vector>
 std::vector<int> twoSum(int a[], int target,int n);
-int main(int argc, const char * argv[]){
-    
-    int a[] = {2,5,4,87,12};
-    std::vector<int> b = twoSum(a, 16, 5);
-    
-    for (int i =0; i<b.size(); i++) {
-        
-        std::cout<<(b[i]);
-    }
-    return 0;
-    
-}
+//int main(int argc, const char * argv[]){
+//    
+//    int a[] = {2,5,4,87,12};
+//    std::vector<int> b = twoSum(a, 16, 5);
+//    
+//    for (int i =0; i<b.size(); i++) {
+//        
+//        std::cout<<(b[i]);
+//    }
+//    return 0;
+//    
+//}
 
 std::vector<int> twoSum(int a[], int target,int n){
     

@@ -1,8 +1,8 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  ReplaceBlank
 //
-//  Created by wjl on 16/1/24.
+//  Created by wjl on 16/1/29.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
 
@@ -45,9 +45,9 @@ void ReplaceBlank(char string[], int length){
         
         else{
             string[indexOfNew--] = string[indexOfOriginal];
-         
+            
         }
-           indexOfOriginal --;
+        indexOfOriginal --;
     }
     
     
@@ -66,5 +66,5 @@ int main(int argc, const char * argv[]) {
     std::cout<< "" <<std::endl;
     
     return  0;
-
+    
 }

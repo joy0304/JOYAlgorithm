@@ -8,60 +8,66 @@
 
 #include <stdio.h>
 #include <iostream>
-//length是字符数组的总容量
-void ReplaceBlank(char string[], int length){
-    
-    if (string == NULL && length < 0) {
-        return;
-    }
-    
-    int originalLength = 0;
-    int blankNumber = 0;
-    int i = 0;
-    while (string[i] != '\0') {
-        originalLength ++;
-        if (string[i] == ' ') {
-            blankNumber ++;
-        }
-        i ++;
-    }
-    
-    int newLength = originalLength + blankNumber * 2;
-    if (newLength > length){
-        return;
-    }
-    
-    int indexOfOriginal = originalLength;
-    int indexOfNew = newLength;
-    //printf("%d,%d",indexOfNew,indexOfOriginal);
-    
-    while (indexOfNew > indexOfOriginal && indexOfOriginal >= 0) {
-        
-        if (string[indexOfOriginal] == ' ') {
-            string[indexOfNew--] = '0';
-            string[indexOfNew--] = '2';
-            string[indexOfNew--] = '%';
+
+
+struct ListNode{
+    int m_nValue;
+    ListNode* m_pNext;
+};
+
+void PrintListReversingly_Recursively(ListNode* pHead)
+{
+    if(pHead != NULL)
+    {
+        if (pHead->m_pNext != NULL)
+        {
+            PrintListReversingly_Recursively(pHead->m_pNext);
         }
         
-        else{
-            string[indexOfNew--] = string[indexOfOriginal];
-         
-        }
-           indexOfOriginal --;
+        printf("%d\t", pHead->m_nValue);
+    }
+}
+
+
+
+void ConnectListNodes(ListNode* pCurrent, ListNode* pNext)
+{
+    if(pCurrent == NULL)
+    {
+        printf("Error to connect two nodes.\n");
+        exit(1);
     }
     
+    pCurrent->m_pNext = pNext;
+}
+
+
+ListNode* CreateListNode(int value)
+{
+    ListNode* pNode = new ListNode();
+    pNode->m_nValue = value;
+    pNode->m_pNext = NULL;
     
-    std::cout<< string <<std::endl;
-    
+    return pNode;
 }
 
 
 int main(int argc, const char * argv[]) {
     
+
     
-    char string[40] = "we  are happy.";
+    ListNode* pNode1 = CreateListNode(1);
+    ListNode* pNode2 = CreateListNode(2);
+    ListNode* pNode3 = CreateListNode(3);
+    ListNode* pNode4 = CreateListNode(4);
+    ListNode* pNode5 = CreateListNode(5);
     
-    ReplaceBlank(string, 40);
+    ConnectListNodes(pNode1, pNode2);
+    ConnectListNodes(pNode2, pNode3);
+    ConnectListNodes(pNode3, pNode4);
+    ConnectListNodes(pNode4, pNode5);
+    
+    PrintListReversingly_Recursively(pNode1);
     
     std::cout<< "" <<std::endl;
     

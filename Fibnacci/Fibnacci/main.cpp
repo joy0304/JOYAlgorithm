@@ -1,11 +1,10 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  Fibnacci
 //
-//  Created by wjl on 16/1/30.
+//  Created by wjl on 16/2/2.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
-
 #include <stdio.h>
 #include <iostream>
 #include <exception>
@@ -24,7 +23,7 @@ long Fibonacci(int n){
     return Fibonacci(n - 1) + Fibonacci(n-2);
 }
 
-//迭代
+//迭代   复杂度为n
 long Fibonacci2(int n){
     int result[2] = {0,1};
     if (n<2) {
@@ -47,20 +46,11 @@ long Fibonacci2(int n){
 
 int main(int argc, const char * argv[]) {
     
-//    try
-//    {
-//    }
-//    catch (...){
-//        printf("Test failed.\n");
-//    }
-//    
-
     long i = Fibonacci(6);
-    
     long j = Fibonacci2(5);
     
     std::cout<< i <<std::endl;
     std::cout<< j <<std::endl;
     return  0;
-
+    
 }

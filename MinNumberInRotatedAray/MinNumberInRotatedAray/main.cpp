@@ -1,8 +1,8 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  MinNumberInRotatedAray
 //
-//  Created by wjl on 16/1/30.
+//  Created by wjl on 16/2/2.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
 
@@ -62,7 +62,7 @@ int main(int argc, const char * argv[]) {
     
     try
     {
-        int result1 = Min(NULL, 0);
+        Min(NULL, 0);
     }
     catch (...){
         printf("Test failed.\n");
@@ -74,5 +74,5 @@ int main(int argc, const char * argv[]) {
     std::cout<< result2 <<std::endl;
     
     return  0;
-
+    
 }

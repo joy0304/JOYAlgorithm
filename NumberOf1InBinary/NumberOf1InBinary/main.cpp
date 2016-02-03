@@ -1,17 +1,17 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  NumberOf1InBinary
 //
-//  Created by wjl on 16/1/30.
+//  Created by wjl on 16/2/3.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
+
 
 #include <stdio.h>
 #include <iostream>
 #include <exception>
 
 using namespace std;
-
 
 int NumberOf1(int n){
     int count = 0;
@@ -20,8 +20,8 @@ int NumberOf1(int n){
         
         if (n & flag)
             count++;
-            
-            flag = flag << 1;
+        
+        flag = flag << 1;
         //printf("%d \n",flag);
     }
     return count;
@@ -42,20 +42,11 @@ int NumberOf2(int n){
 
 int main(int argc, const char * argv[]) {
     
-//    try
-//    {
-//    }
-//    catch (...){
-//        printf("Test failed.\n");
-//    }
-//    
-
     int i = NumberOf1(0x7FFFFFFF);
     int j = NumberOf2(12);
-    
     
     std::cout<< i <<std::endl;
     std::cout<< j <<std::endl;
     return  0;
-
+    
 }

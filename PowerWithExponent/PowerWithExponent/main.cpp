@@ -1,8 +1,8 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  PowerWithExponent
 //
-//  Created by wjl on 16/1/30.
+//  Created by wjl on 16/2/3.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
 
@@ -70,10 +70,7 @@ int main(int argc, const char * argv[]) {
         printf("Test failed.\n");
     }
     
-    //Power(2, 4);
-
-    
     std::cout<< result <<std::endl;
     return  0;
-
+    
 }

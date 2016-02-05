@@ -1,8 +1,8 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  DeleteNodeList
 //
-//  Created by wjl on 16/1/30.
+//  Created by wjl on 16/2/5.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
 
@@ -92,13 +92,6 @@ void deleteNode(ListNode** pListHead, ListNode* pToBeDeleted){
 
 int main(int argc, const char * argv[]) {
     
-//    try
-//    {
-//           }
-//    catch (...){
-//        printf("Test failed.\n");
-//    }
-
     ListNode* pNode1 = CreateListNode(1);
     ListNode* pNode2 = CreateListNode(2);
     ListNode* pNode3 = CreateListNode(3);
@@ -110,11 +103,10 @@ int main(int argc, const char * argv[]) {
     ConnectListNodes(pNode3, pNode4);
     ConnectListNodes(pNode4, pNode5);
     
-    deleteNode(&pNode1, pNode3);
+    deleteNode(&pNode1, pNode5);
     
     PrintList(pNode1);
     
-    //std::cout<< "" <<std::endl;
     return  0;
-
+    
 }

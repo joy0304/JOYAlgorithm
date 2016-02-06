@@ -1,8 +1,8 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  FindKthToTail
 //
-//  Created by wjl on 16/1/30.
+//  Created by wjl on 16/2/6.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
 
@@ -72,13 +72,6 @@ ListNode* FindKthToTail(ListNode* pListNode, int k){
 
 int main(int argc, const char * argv[]) {
     
-//    try
-//    {
-//           }
-//    catch (...){
-//        printf("Test failed.\n");
-//    }
-    
     ListNode* pNode1 = CreateListNode(1);
     ListNode* pNode2 = CreateListNode(2);
     ListNode* pNode3 = CreateListNode(3);
@@ -90,9 +83,16 @@ int main(int argc, const char * argv[]) {
     ConnectListNodes(pNode3, pNode4);
     ConnectListNodes(pNode4, pNode5);
     
-    ListNode* temp =  FindKthToTail(pNode1, 2);
-    
-    std::cout<< temp->m_nValue <<std::endl;
+    ListNode* pNode =  FindKthToTail(pNode1, 7);
+    if(pNode == NULL)
+    {
+        printf("The node is NULL\n");
+    }
+    else
+    {
+        printf("The key in node is %d.\n", pNode->m_nValue);
+        
+    }
     return  0;
-
+    
 }

@@ -1,10 +1,13 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  ReverseList
 //
-//  Created by wjl on 16/1/30.
+//  Created by wjl on 16/2/6.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
+
+#include <iostream>
+
 
 #include <stdio.h>
 #include <iostream>
@@ -28,7 +31,6 @@ ListNode* CreateListNode(int value){
     return pNode;
 }
 
-
 void ConnectListNodes(ListNode* pCurrent, ListNode* pNext){
     
     if (pCurrent == NULL) {
@@ -39,11 +41,8 @@ void ConnectListNodes(ListNode* pCurrent, ListNode* pNext){
     pCurrent->m_pNext = pNext;
 }
 
-
 //反转链表
-
 ListNode* ReverseList(ListNode* pHead){
-    
     
     ListNode* pReverseHead = NULL;
     ListNode* pNode = pHead;
@@ -66,9 +65,6 @@ ListNode* ReverseList(ListNode* pHead){
     }
     return pReverseHead;
 }
-
-
-
 
 int main(int argc, const char * argv[]) {
     

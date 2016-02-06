@@ -1,10 +1,11 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  RecordOddEven
 //
-//  Created by wjl on 16/1/30.
+//  Created by wjl on 16/2/6.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
+
 
 #include <stdio.h>
 #include <iostream>
@@ -47,19 +48,12 @@ void Recoder(int* pData,int length){
 
 
 int main(int argc, const char * argv[]) {
-    
-//    try
-//    {
-//           }
-//    catch (...){
-//        printf("Test failed.\n");
-//    }
 
+    
     int a[] = {1,2,3,4,5,6,7};
     
     Recoder(a, sizeof(a)/sizeof(int));
-    
-    //std::cout<< "" <<std::endl;
-    return  0;
 
+    return  0;
+    
 }

@@ -36,12 +36,15 @@ void ConnectTreeNodes(BinaryTreeNode* pParent, BinaryTreeNode* pLeft, BinaryTree
     }
 }
 
-void InOrderRecursion(BinaryTreeNode* subTree){
+void InOrderRecursion(BinaryTreeNode* subTree, int& k){
     
     if (subTree!=NULL) {
-        InOrderRecursion(subTree->m_pLeft);
-        printf("%d\n",subTree->m_nValue);
-        InOrderRecursion(subTree->m_pRight);
+        InOrderRecursion(subTree->m_pLeft,k);
+        --k;
+        if (k==0) {
+            printf("%d\n",subTree->m_nValue);
+        }
+        InOrderRecursion(subTree->m_pRight,k);
     }
     
 }
@@ -70,19 +73,20 @@ void InOrderIteration(BinaryTreeNode* subTree){
 
 int main(int argc, const char * argv[]) {
     
-    BinaryTreeNode* root1 = CreateBinaryTreeNode(1);
-    BinaryTreeNode* root2 = CreateBinaryTreeNode(2);
-    BinaryTreeNode* root3 = CreateBinaryTreeNode(3);
-    BinaryTreeNode* root4 = CreateBinaryTreeNode(4);
-    BinaryTreeNode* root5 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* root1 = CreateBinaryTreeNode(5);
+    BinaryTreeNode* root2 = CreateBinaryTreeNode(3);
+    BinaryTreeNode* root3 = CreateBinaryTreeNode(7);
+    BinaryTreeNode* root4 = CreateBinaryTreeNode(2);
+    BinaryTreeNode* root5 = CreateBinaryTreeNode(4);
     BinaryTreeNode* root6 = CreateBinaryTreeNode(6);
+    BinaryTreeNode* root7 = CreateBinaryTreeNode(8);
     
     ConnectTreeNodes(root1, root2, root3);
     ConnectTreeNodes(root2, root4, root5);
-    ConnectTreeNodes(root3, root6, NULL);
-    
-    InOrderRecursion(root1);
-    InOrderIteration(root1);
+    ConnectTreeNodes(root3, root6, root7);
+    int k = 2;
+    InOrderRecursion(root1, k);
+   // InOrderIteration(root1);
     return  0;
     
 }

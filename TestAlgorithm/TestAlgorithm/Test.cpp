@@ -1,100 +1,55 @@
 //
-//  FindInPartiallySortedMatrix.cpp
-//  TestAlgorithm
+//  main.cpp
+//  BinaryTreeInOrder
 //
-//  Created by wjl on 16/1/30.
+//  Created by wjl on 16/2/19.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
 
-#include <stdio.h>
 #include <iostream>
-#include <exception>
-#include <stdlib.h>
-
+#include <stack>
+#include <vector>
+#include <set>
 using namespace std;
+void Permutation(char* pStr, char* pBegin);
 
-struct ListNode{
-    int m_nValue;
-    ListNode* m_pNext;
-};
-//组建链表
+//void Permutation(char* pStr)
+//{
+//    if(pStr == NULL)
+//        return;
+//    
+//    Permutation(pStr, pStr);
+//}
 
-ListNode* CreateListNode(int value){
-    
-    ListNode* pNode = new ListNode();
-    pNode->m_nValue = value;
-    pNode->m_pNext = NULL;
-    
-    return pNode;
-}
-
-
-void ConnectListNodes(ListNode* pCurrent, ListNode* pNext){
-    
-    if (pCurrent == NULL) {
-        printf("error");
-        exit(1);
+void Permutation(char* pStr, char* pBegin)
+{
+    if(*pBegin == '\0')
+    {
+        printf("%s\n", pStr);
     }
-    
-    pCurrent->m_pNext = pNext;
-}
-
-
-//反转链表
-
-ListNode* ReverseList(ListNode* pHead){
-    
-    
-    ListNode* pReverseHead = NULL;
-    ListNode* pNode = pHead;
-    ListNode* pPrevNode = NULL;
-    
-    while (pNode != NULL) {
-        
-        //先记住下一个结点是谁，防止后面无法与前面相连
-        ListNode* pNext = pNode->m_pNext;
-        
-        if (pNext == NULL) {
+    else
+    {
+        for(char* pCh = pBegin; *pCh != '\0'; ++ pCh)
+        {
+            char temp = *pCh;
+            *pCh = *pBegin;
+            *pBegin = temp;
             
-            pReverseHead = pNode;
+            Permutation(pStr, pBegin + 1);
+            
+            temp = *pCh;
+            *pCh = *pBegin;
+            *pBegin = temp;
         }
-        
-        pNode->m_pNext = pPrevNode;
-        pPrevNode = pNode;
-        pNode = pNext;
-        
     }
-    return pReverseHead;
+    
 }
 
-
-
-
-int main(int argc, const char * argv[]) {
+int main(){
     
-    ListNode* pNode1 = CreateListNode(1);
-    ListNode* pNode2 = CreateListNode(2);
-    ListNode* pNode3 = CreateListNode(3);
-    ListNode* pNode4 = CreateListNode(4);
-    ListNode* pNode5 = CreateListNode(5);
+    char string2[] = "abc";
+    Permutation(string2,string2);
     
-    ConnectListNodes(pNode1, pNode2);
-    ConnectListNodes(pNode2, pNode3);
-    ConnectListNodes(pNode3, pNode4);
-    ConnectListNodes(pNode4, pNode5);
-    
-    
-    ListNode* temp =  ReverseList(pNode1);
-    ListNode* temp2 = ReverseList(NULL);
-    
-    if (temp2 == NULL) {
-        printf("null \t");
-    }
-    else{
-        printf("%d \t",temp2->m_nValue);
-    }
-    
-    
-    return  0;
+    return 0;
     
 }

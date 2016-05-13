@@ -1,6 +1,6 @@
 //
 //  main.cpp
-//  BinaryTreeInOrder
+//
 //
 //  Created by wjl on 16/2/19.
 //  Copyright © 2016年 Martin. All rights reserved.
@@ -10,46 +10,41 @@
 #include <stack>
 #include <vector>
 #include <set>
+#include <map>
+#include <math.h>
+#include <string.h>
 using namespace std;
-void Permutation(char* pStr, char* pBegin);
 
-//void Permutation(char* pStr)
-//{
-//    if(pStr == NULL)
-//        return;
-//    
-//    Permutation(pStr, pStr);
-//}
-
-void Permutation(char* pStr, char* pBegin)
-{
-    if(*pBegin == '\0')
-    {
-        printf("%s\n", pStr);
-    }
-    else
-    {
-        for(char* pCh = pBegin; *pCh != '\0'; ++ pCh)
-        {
-            char temp = *pCh;
-            *pCh = *pBegin;
-            *pBegin = temp;
-            
-            Permutation(pStr, pBegin + 1);
-            
-            temp = *pCh;
-            *pCh = *pBegin;
-            *pBegin = temp;
-        }
+vector<int> twoSum(vector<int>& nums, int target) {
+    vector<int> result(2);
+    map<int, int> hash;
+    
+    for(int i = 0;i < nums.size();i++){
+        hash[nums[i]] = i;
     }
     
+    for (int j = 0; j < nums.size(); j++) {
+        // end 是末尾，里面没有实际元素
+        if ((hash.find(target - nums[j]) != hash.end()) && (hash[target - nums[j]] != j)) {
+            result[0] = j;
+            result[1] = hash[target - nums[j]];
+            break;
+        }
+    }
+    return result;
 }
 
 int main(){
+
+    vector<int> Test;
+    for (int i = 0; i < 10; i++) {
+        Test.push_back(i);
+    }
+    vector<int> result = twoSum(Test, 6);
     
-    char string2[] = "abc";
-    Permutation(string2,string2);
+    for (int i = 0; i < result.size(); i++) {
+        cout<< result[i] <<endl;
+    }
     
     return 0;
-    
 }

@@ -14,40 +14,40 @@
 using namespace std;
 
 struct ListNode{
-    int m_nValue;
-    ListNode* m_pNext;
+    int Value;
+    ListNode* pNext;
 };
 
 //构建链表
-
-ListNode* CreateListNode(int value){
-    
-    ListNode* pNode = new ListNode();
-    pNode->m_nValue = value;
-    pNode->m_pNext = NULL;
-    
-    return pNode;
-}
-
-void ConnectListNodes(ListNode* pCurrent, ListNode* pNext)
-{
-    if(pCurrent == NULL)
-    {
-        printf("Error to connect two nodes.\n");
-        exit(1);
-    }
-    
-    pCurrent->m_pNext = pNext;
-}
-//算法
-
+//
+//ListNode* CreateListNode(int value){
+//    
+//    ListNode* pNode = new ListNode();
+//    pNode->m_nValue = value;
+//    pNode->m_pNext = NULL;
+//    
+//    return pNode;
+//}
+//
+//void ConnectListNodes(ListNode* pCurrent, ListNode* pNext)
+//{
+//    if(pCurrent == NULL)
+//    {
+//        printf("Error to connect two nodes.\n");
+//        exit(1);
+//    }
+//    
+//    pCurrent->m_pNext = pNext;
+//}
+////算法
+//
 int GetListLength(ListNode* pHead){
     
     int nLength = 0;
     ListNode* pNode = pHead;
     while (pNode!=NULL) {
         nLength++;
-        pNode = pNode->m_pNext;
+        pNode = pNode->pNext;
     }
     return nLength;
     
@@ -76,12 +76,12 @@ ListNode* FindFirstCommonNode(ListNode* Phead1, ListNode* pHead2){
     }
     
     for(int i=0; i<nlengthGap;i++){
-        pListLong = pListLong->m_pNext;
+        pListLong = pListLong->pNext;
     }
     
     while (pListLong!=NULL && pListShort!=NULL && pListLong!=pListShort) {
-        pListLong = pListLong->m_pNext;
-        pListShort = pListShort->m_pNext;
+        pListLong = pListLong->pNext;
+        pListShort = pListShort->pNext;
     }
     
     ListNode* pFirstCommonNode = pListLong;
@@ -89,29 +89,29 @@ ListNode* FindFirstCommonNode(ListNode* Phead1, ListNode* pHead2){
     return pFirstCommonNode;
 }
 
-int main(int argc, const char * argv[]) {
-    
-    ListNode* pNode1 = CreateListNode(1);
-    ListNode* pNode2 = CreateListNode(2);
-    ListNode* pNode3 = CreateListNode(3);
-    ListNode* pNode4 = CreateListNode(4);
-    ListNode* pNode5 = CreateListNode(5);
-    
-    ConnectListNodes(pNode1, pNode2);
-    ConnectListNodes(pNode2, pNode3);
-    ConnectListNodes(pNode3, pNode4);
-    ConnectListNodes(pNode4, pNode5);
-    
-    ListNode* result = FindFirstCommonNode(pNode1,pNode3);
-    
-    if(result != NULL)
-    {
-        printf("%d\n", result->m_nValue);
-    }
-    return  0;
-    
-}
-
-
-
-
+//int main(int argc, const char * argv[]) {
+//    
+//    ListNode* pNode1 = CreateListNode(1);
+//    ListNode* pNode2 = CreateListNode(2);
+//    ListNode* pNode3 = CreateListNode(3);
+//    ListNode* pNode4 = CreateListNode(4);
+//    ListNode* pNode5 = CreateListNode(5);
+//    
+//    ConnectListNodes(pNode1, pNode2);
+//    ConnectListNodes(pNode2, pNode3);
+//    ConnectListNodes(pNode3, pNode4);
+//    ConnectListNodes(pNode4, pNode5);
+//    
+//    ListNode* result = FindFirstCommonNode(pNode1,pNode3);
+//    
+//    if(result != NULL)
+//    {
+//        printf("%d\n", result->m_nValue);
+//    }
+//    return  0;
+//    
+//}
+//
+//
+//
+//

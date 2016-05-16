@@ -13,16 +13,26 @@
 using namespace std;
 using std::cout;
 
-int removeElement(vector<int>& nums, int val) {
-    int index = 0;
-    for (int i = 0; i < nums.size(); i++) {
-        if (nums[i] != val) {
-            nums[index++] = nums[i];
+void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+    
+    int k = m + n - 1;
+    int i = m - 1;
+    int j = n - 1;
+    while (i >=0 && j >= 0) {
+        if (nums1[i] > nums2[j]) {
+            nums1[k--] = nums1[i];
+            i--;
+        }
+        else{
+            nums1[k--] = nums2[j];
+            j--;
         }
     }
-    return index;
+    
+    while (j >= 0) {
+        nums1[k--] = nums2[j--];
+    }
 }
-
 int main(){
  
         vector<int> Test;
@@ -36,7 +46,6 @@ int main(){
         Test.push_back(7);
         Test.push_back(7);
     
-    int result = removeElement(Test, 3);
     cout << result << endl;
     
 }

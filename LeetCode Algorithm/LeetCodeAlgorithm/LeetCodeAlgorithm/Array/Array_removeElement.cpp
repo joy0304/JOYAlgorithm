@@ -1,11 +1,10 @@
 //
-//  Test.cpp
+//  Array_removeElement.cpp
 //  LeetCodeAlgorithm
 //
-//  Created by wjl on 16/5/14.
+//  Created by wjl on 16/5/16.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
-
 #include <stdio.h>
 #include <string.h>
 #include <iostream>
@@ -21,22 +20,4 @@ int removeElement(vector<int>& nums, int val) {
         }
     }
     return index;
-}
-
-int main(){
- 
-        vector<int> Test;
-        Test.push_back(1);
-        Test.push_back(7);
-        Test.push_back(3);
-        Test.push_back(2);
-        Test.push_back(3);
-        Test.push_back(4);
-        Test.push_back(3);
-        Test.push_back(7);
-        Test.push_back(7);
-    
-    int result = removeElement(Test, 3);
-    cout << result << endl;
-    
 }

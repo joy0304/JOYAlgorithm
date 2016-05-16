@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1FBDD91CEA079F00732267 /* Array_removeElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B1FBDD81CEA079F00732267 /* Array_removeElement.cpp */; };
 		1B965B731CE6BF0300A02065 /* Array_TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B965B721CE6BF0300A02065 /* Array_TwoSum.cpp */; };
 		1B965B751CE6CA7000A02065 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B965B741CE6CA7000A02065 /* Test.cpp */; };
 		1B965B911CE8B16A00A02065 /* Array_removeDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B965B901CE8B16A00A02065 /* Array_removeDuplicates.cpp */; };
@@ -25,6 +26,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B1FBDD81CEA079F00732267 /* Array_removeElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array_removeElement.cpp; sourceTree = "<group>"; };
 		1B965B671CE6BEBB00A02065 /* LeetCodeAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = LeetCodeAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B965B721CE6BF0300A02065 /* Array_TwoSum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array_TwoSum.cpp; sourceTree = "<group>"; };
 		1B965B741CE6CA7000A02065 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 			children = (
 				1B965B721CE6BF0300A02065 /* Array_TwoSum.cpp */,
 				1B965B901CE8B16A00A02065 /* Array_removeDuplicates.cpp */,
+				1B1FBDD81CEA079F00732267 /* Array_removeElement.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			files = (
 				1B965B911CE8B16A00A02065 /* Array_removeDuplicates.cpp in Sources */,
 				1B965B731CE6BF0300A02065 /* Array_TwoSum.cpp in Sources */,
+				1B1FBDD91CEA079F00732267 /* Array_removeElement.cpp in Sources */,
 				1B965B751CE6CA7000A02065 /* Test.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,39 +13,43 @@
 using namespace std;
 using std::cout;
 
-void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
+int majorityElement (int array[], int n) {
     
-    int k = m + n - 1;
-    int i = m - 1;
-    int j = n - 1;
-    while (i >=0 && j >= 0) {
-        if (nums1[i] > nums2[j]) {
-            nums1[k--] = nums1[i];
-            i--;
-        }
-        else{
-            nums1[k--] = nums2[j];
-            j--;
-        }
+    
+    if (array == NULL || n <= 0 ){
+        return -1;
     }
     
-    while (j >= 0) {
-        nums1[k--] = nums2[j--];
+    int temp = array[0];
+    int nums = 1;
+    for (int i = 1; i < n; i++) {
+        
+        if (temp == array[i]) {
+            nums++;
+        }
+        else {
+            nums--;
+            if (nums == 0) {
+                temp = array[i];
+                nums = 1;
+            }
+        }
     }
+    if (nums > 0) {
+        return temp;
+    }
+    else {
+        return -1;
+    }
+
 }
+
+
 int main(){
  
-        vector<int> Test;
-        Test.push_back(1);
-        Test.push_back(7);
-        Test.push_back(3);
-        Test.push_back(2);
-        Test.push_back(3);
-        Test.push_back(4);
-        Test.push_back(3);
-        Test.push_back(7);
-        Test.push_back(7);
-    
+    int temp[9] = {1,2,3,1,1,2,1,1,7};
+    int result = majorityElement(temp, 9);
     cout << result << endl;
+
     
 }

@@ -1,8 +1,8 @@
 //
-//  Test.cpp
+//  Array_arrRotate.cpp
 //  LeetCodeAlgorithm
 //
-//  Created by wjl on 16/5/14.
+//  Created by wjl on 16/5/18.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
 
@@ -37,14 +37,4 @@ void arrRotate(int *nums, int k , int n) {
     reverse(nums, nums + n);
     reverse(nums, nums + k);
     reverse(nums + k, nums + n);
-}
-
-int main(){
- 
-    int temp[] = {1,2,3,4,5,6,7};
-    arrRotate(temp, 3, 7);
-    for (int i = 0; i < 7; i++) {
-        cout << temp[i] <<endl;
-    }
-    
 }

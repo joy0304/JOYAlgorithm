@@ -10,41 +10,16 @@
 #include <string.h>
 #include <iostream>
 #include <vector>
+#include <set>
 using namespace std;
 using std::cout;
 
-void reverse(int *left, int *right){
-    if (left == NULL || right == NULL) {
-        return;
-    }
+bool containsDuplicate(vector<int>& nums) {
     
-    while (left < right) {
-        int temp = *left;
-        *left = * right;
-        *right = temp;
-        
-        left++;
-        right--;
-    }
-}
-
-void arrRotate(int *nums, int k , int n) {
-    
-    if (n == 0 || k < 0) {
-        return;
-    }
-    
-    reverse(nums, nums + n);
-    reverse(nums, nums + k);
-    reverse(nums + k, nums + n);
+    return nums.size() > set<int>(nums.begin(), nums.end()).size();
 }
 
 int main(){
  
-    int temp[] = {1,2,3,4,5,6,7};
-    arrRotate(temp, 3, 7);
-    for (int i = 0; i < 7; i++) {
-        cout << temp[i] <<endl;
-    }
     
 }

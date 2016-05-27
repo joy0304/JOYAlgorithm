@@ -1,11 +1,10 @@
 //
-//  Test.cpp
+//  array_missingNumber.cpp
 //  LeetCodeAlgorithm
 //
-//  Created by wjl on 16/5/14.
+//  Created by Joy on 16/5/27.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
-
 #include <stdio.h>
 #include <string.h>
 #include <iostream>
@@ -26,19 +25,4 @@ int missingNumber(vector<int>& nums) {
     }
     result ^= nums.size();
     return result;
-}
-
-
-int main(){
- 
-    vector<int> vec(10);
-    for (int i = 0; i < 10; i++) {
-        vec[i] = i;
-    }
-    
-    vec.erase(vec.begin() + 5);
-    
-    int result = missingNumber(vec);
-    
-    cout<< result <<endl;
 }

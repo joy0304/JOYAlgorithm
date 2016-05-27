@@ -13,6 +13,7 @@
 		1B965B731CE6BF0300A02065 /* Array_TwoSum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B965B721CE6BF0300A02065 /* Array_TwoSum.cpp */; };
 		1B965B751CE6CA7000A02065 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B965B741CE6CA7000A02065 /* Test.cpp */; };
 		1B965B911CE8B16A00A02065 /* Array_removeDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B965B901CE8B16A00A02065 /* Array_removeDuplicates.cpp */; };
+		A8E90D491CF8790E005DCC2E /* array_missingNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		1B965B721CE6BF0300A02065 /* Array_TwoSum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array_TwoSum.cpp; sourceTree = "<group>"; };
 		1B965B741CE6CA7000A02065 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
 		1B965B901CE8B16A00A02065 /* Array_removeDuplicates.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array_removeDuplicates.cpp; sourceTree = "<group>"; };
+		A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_missingNumber.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				1B1FBDD81CEA079F00732267 /* Array_removeElement.cpp */,
 				1B61B3F91CECB57C00537DFA /* Array_majorityElement.cpp */,
 				1B61B3FB1CECC73800537DFA /* Array_arrRotate.cpp */,
+				A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			files = (
 				1B61B3FA1CECB57C00537DFA /* Array_majorityElement.cpp in Sources */,
 				1B965B911CE8B16A00A02065 /* Array_removeDuplicates.cpp in Sources */,
+				A8E90D491CF8790E005DCC2E /* array_missingNumber.cpp in Sources */,
 				1B965B731CE6BF0300A02065 /* Array_TwoSum.cpp in Sources */,
 				1B1FBDD91CEA079F00732267 /* Array_removeElement.cpp in Sources */,
 				1B61B3FC1CECC73800537DFA /* Array_arrRotate.cpp in Sources */,

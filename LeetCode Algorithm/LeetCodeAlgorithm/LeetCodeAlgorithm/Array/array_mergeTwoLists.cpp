@@ -1,11 +1,10 @@
 //
-//  Test.cpp
+//  array_mergeTwoLists.cpp
 //  LeetCodeAlgorithm
 //
-//  Created by wjl on 16/5/14.
+//  Created by Joy on 16/5/30.
 //  Copyright © 2016年 Martin. All rights reserved.
 //
-
 #include <stdio.h>
 #include <string.h>
 #include <iostream>
@@ -40,11 +39,27 @@ ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {
     }
     
     return mergeList;
-   
 }
 
-
-int main(){
- 
-
+ListNode* mergeTwoList(ListNode* l1, ListNode* l2) {
+    
+    ListNode *mergeList = NULL;
+    
+    if (l1 && l2) {
+        if (l1->value < l2->value) {
+            mergeList->next = l1;
+            l1 = l1->next;
+        }
+        else {
+            mergeList->next = l2;
+            l2 = l2->next;
+        }
+        
+        mergeList = mergeList->next;
+    }
+    
+    mergeList->next = l1 ? l1 : l2;
+    
+    return mergeList;
+    
 }

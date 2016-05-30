@@ -14,6 +14,7 @@
 		1B965B751CE6CA7000A02065 /* Test.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B965B741CE6CA7000A02065 /* Test.cpp */; };
 		1B965B911CE8B16A00A02065 /* Array_removeDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B965B901CE8B16A00A02065 /* Array_removeDuplicates.cpp */; };
 		A8821C8A1CFB49BF00D500B7 /* array_mergeTwoLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8821C891CFB49BF00D500B7 /* array_mergeTwoLists.cpp */; };
+		A8821C8C1CFC962200D500B7 /* array_swapPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8821C8B1CFC962200D500B7 /* array_swapPairs.cpp */; };
 		A8E90D491CF8790E005DCC2E /* array_missingNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		1B965B741CE6CA7000A02065 /* Test.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Test.cpp; sourceTree = "<group>"; };
 		1B965B901CE8B16A00A02065 /* Array_removeDuplicates.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array_removeDuplicates.cpp; sourceTree = "<group>"; };
 		A8821C891CFB49BF00D500B7 /* array_mergeTwoLists.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_mergeTwoLists.cpp; sourceTree = "<group>"; };
+		A8821C8B1CFC962200D500B7 /* array_swapPairs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_swapPairs.cpp; sourceTree = "<group>"; };
 		A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_missingNumber.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,7 @@
 				1B61B3FB1CECC73800537DFA /* Array_arrRotate.cpp */,
 				A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */,
 				A8821C891CFB49BF00D500B7 /* array_mergeTwoLists.cpp */,
+				A8821C8B1CFC962200D500B7 /* array_swapPairs.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B61B3FA1CECB57C00537DFA /* Array_majorityElement.cpp in Sources */,
+				A8821C8C1CFC962200D500B7 /* array_swapPairs.cpp in Sources */,
 				1B965B911CE8B16A00A02065 /* Array_removeDuplicates.cpp in Sources */,
 				A8E90D491CF8790E005DCC2E /* array_missingNumber.cpp in Sources */,
 				1B965B731CE6BF0300A02065 /* Array_TwoSum.cpp in Sources */,

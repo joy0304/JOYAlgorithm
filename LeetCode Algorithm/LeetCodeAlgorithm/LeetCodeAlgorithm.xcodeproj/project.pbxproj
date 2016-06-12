@@ -15,6 +15,11 @@
 		1B965B911CE8B16A00A02065 /* Array_removeDuplicates.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B965B901CE8B16A00A02065 /* Array_removeDuplicates.cpp */; };
 		A8821C8A1CFB49BF00D500B7 /* array_mergeTwoLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8821C891CFB49BF00D500B7 /* array_mergeTwoLists.cpp */; };
 		A8821C8C1CFC962200D500B7 /* array_swapPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8821C8B1CFC962200D500B7 /* array_swapPairs.cpp */; };
+		A8D04EF11D01C0AB00FF8F9A /* BubbleSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8D04EF01D01C0AB00FF8F9A /* BubbleSort.cpp */; };
+		A8D04F0E1D03BEF200FF8F9A /* ArrayInsert.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8D04F0D1D03BEF200FF8F9A /* ArrayInsert.cpp */; };
+		A8D04F381D0711EE00FF8F9A /* hasCycle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8D04F371D0711EE00FF8F9A /* hasCycle.cpp */; };
+		A8D04F3B1D07148D00FF8F9A /* numberOf1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8D04F3A1D07148D00FF8F9A /* numberOf1.cpp */; };
+		A8D04F3D1D07173900FF8F9A /* deleteNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8D04F3C1D07173900FF8F9A /* deleteNode.cpp */; };
 		A8E90D491CF8790E005DCC2E /* array_missingNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +45,11 @@
 		1B965B901CE8B16A00A02065 /* Array_removeDuplicates.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Array_removeDuplicates.cpp; sourceTree = "<group>"; };
 		A8821C891CFB49BF00D500B7 /* array_mergeTwoLists.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_mergeTwoLists.cpp; sourceTree = "<group>"; };
 		A8821C8B1CFC962200D500B7 /* array_swapPairs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_swapPairs.cpp; sourceTree = "<group>"; };
+		A8D04EF01D01C0AB00FF8F9A /* BubbleSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleSort.cpp; sourceTree = "<group>"; };
+		A8D04F0D1D03BEF200FF8F9A /* ArrayInsert.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArrayInsert.cpp; sourceTree = "<group>"; };
+		A8D04F371D0711EE00FF8F9A /* hasCycle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = hasCycle.cpp; sourceTree = "<group>"; };
+		A8D04F3A1D07148D00FF8F9A /* numberOf1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = numberOf1.cpp; sourceTree = "<group>"; };
+		A8D04F3C1D07173900FF8F9A /* deleteNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deleteNode.cpp; sourceTree = "<group>"; };
 		A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_missingNumber.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,6 +83,10 @@
 		1B965B691CE6BEBB00A02065 /* LeetCodeAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				A8D04F391D07147D00FF8F9A /* 其他 */,
+				A8D04F361D0711C000FF8F9A /* 链表 */,
+				A8D04F0C1D03B89100FF8F9A /* 线性表 */,
+				A8D04EEF1D01C08A00FF8F9A /* Sort */,
 				1B965B711CE6BEE300A02065 /* Array */,
 				1B965B741CE6CA7000A02065 /* Test.cpp */,
 			);
@@ -92,6 +106,39 @@
 				A8821C8B1CFC962200D500B7 /* array_swapPairs.cpp */,
 			);
 			path = Array;
+			sourceTree = "<group>";
+		};
+		A8D04EEF1D01C08A00FF8F9A /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				A8D04EF01D01C0AB00FF8F9A /* BubbleSort.cpp */,
+			);
+			name = Sort;
+			sourceTree = "<group>";
+		};
+		A8D04F0C1D03B89100FF8F9A /* 线性表 */ = {
+			isa = PBXGroup;
+			children = (
+				A8D04F0D1D03BEF200FF8F9A /* ArrayInsert.cpp */,
+			);
+			name = "线性表";
+			sourceTree = "<group>";
+		};
+		A8D04F361D0711C000FF8F9A /* 链表 */ = {
+			isa = PBXGroup;
+			children = (
+				A8D04F371D0711EE00FF8F9A /* hasCycle.cpp */,
+				A8D04F3C1D07173900FF8F9A /* deleteNode.cpp */,
+			);
+			name = "链表";
+			sourceTree = "<group>";
+		};
+		A8D04F391D07147D00FF8F9A /* 其他 */ = {
+			isa = PBXGroup;
+			children = (
+				A8D04F3A1D07148D00FF8F9A /* numberOf1.cpp */,
+			);
+			name = "其他";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,13 +199,18 @@
 			files = (
 				1B61B3FA1CECB57C00537DFA /* Array_majorityElement.cpp in Sources */,
 				A8821C8C1CFC962200D500B7 /* array_swapPairs.cpp in Sources */,
+				A8D04F3D1D07173900FF8F9A /* deleteNode.cpp in Sources */,
 				1B965B911CE8B16A00A02065 /* Array_removeDuplicates.cpp in Sources */,
 				A8E90D491CF8790E005DCC2E /* array_missingNumber.cpp in Sources */,
 				1B965B731CE6BF0300A02065 /* Array_TwoSum.cpp in Sources */,
+				A8D04F381D0711EE00FF8F9A /* hasCycle.cpp in Sources */,
+				A8D04EF11D01C0AB00FF8F9A /* BubbleSort.cpp in Sources */,
 				1B1FBDD91CEA079F00732267 /* Array_removeElement.cpp in Sources */,
 				1B61B3FC1CECC73800537DFA /* Array_arrRotate.cpp in Sources */,
+				A8D04F0E1D03BEF200FF8F9A /* ArrayInsert.cpp in Sources */,
 				1B965B751CE6CA7000A02065 /* Test.cpp in Sources */,
 				A8821C8A1CFB49BF00D500B7 /* array_mergeTwoLists.cpp in Sources */,
+				A8D04F3B1D07148D00FF8F9A /* numberOf1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

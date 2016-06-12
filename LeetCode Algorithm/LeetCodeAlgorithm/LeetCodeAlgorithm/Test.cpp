@@ -13,62 +13,87 @@
 #include <set>
 using namespace std;
 using std::cout;
-struct ListNode {
-    
+
+struct ListNode{
     int value;
     ListNode *next;
+    
 };
 
-ListNode* swapPairs(ListNode* head) {
-    if(head == NULL)
-        return NULL;
-    if(head->next == NULL)
-        return head;
-    
-    ListNode* next = head->next;
-    head->next = swapPairs(next->next);
-    next->next = head;
-
-    
-    return next;
-}
-ListNode* CreateListNode(int value){
-    
-    ListNode* pNode = new ListNode();
-    pNode->value = value;
-    pNode->next = NULL;
-    
-    return pNode;
-}
-
-void ConnectListNodes(ListNode* pCurrent, ListNode* pNext){
-    
-    if (pCurrent == NULL) {
-        printf("error");
-        exit(1);
+ListNode* createListNode(int value){
+    ListNode *node = new ListNode();
+    if (value) {
+        node->value = value;
+        node->next = NULL;
     }
     
-    pCurrent->next = pNext;
+    return node;
+}
+
+void linkList(ListNode *node1, ListNode *node2){
+    if (node1 && node2) {
+        node1->next = node2;
+    }
+}
+
+void insertNode(ListNode *list, ListNode *node, int value){
+    if (list && node) {
+        ListNode *newNode = new ListNode();
+        newNode->value = value;
+        
+        newNode->next = node->next;
+        node->next = newNode;
+    }
+    
+}
+
+void delNode(ListNode *List, ListNode *delNode){
+    if (!List || !delNode) {
+        return;
+    }
+    
+    if (delNode->next != NULL) {
+        ListNode *node = delNode->next;
+        delNode->value = delNode->next->value;
+        delNode->next = node->next;
+        
+        delete node;
+        node = NULL;
+    }
+    else if (List == delNode) {
+        delete delNode;
+        delNode = NULL;
+        List = NULL;
+        
+    }
+    else {
+        ListNode *node = List;
+        while (node->next != delNode) {
+            node = node->next;
+        }
+        
+        node->next = NULL;
+        delete delNode;
+        delNode = NULL;
+        
+    }
 }
 
 int main(){
- 
-    ListNode *l1 = CreateListNode(1);
-    ListNode *l2 = CreateListNode(2);
-    ListNode *l3 = CreateListNode(3);
-    ListNode *l4 = CreateListNode(4);
+    ListNode *node1 = createListNode(1);
+    ListNode *node2 = createListNode(2);
+    ListNode *node3 = createListNode(3);
     
-    ConnectListNodes(l1, l2);
-    ConnectListNodes(l2, l3);
-    ConnectListNodes(l3, l4);
+    linkList(node1, node2);
+    linkList(node2, node3);
     
-    ListNode *l = swapPairs(l1);
+    insertNode(node1, node2, 6);
+    delNode(node1, node2);
     
-    ListNode *node = l;
-    
-    while(node != NULL) {
-        printf("%d",node->value);
-        node = node->next;
+    while (node1->next != NULL) {
+        printf("%d",node1->value);
+        node1 = node1->next;
     }
-    
+
+    printf("%d",node1->value);
 }

@@ -17,83 +17,24 @@ using std::cout;
 struct ListNode{
     int value;
     ListNode *next;
-    
 };
 
-ListNode* createListNode(int value){
-    ListNode *node = new ListNode();
-    if (value) {
-        node->value = value;
-        node->next = NULL;
-    }
+int main(){
     
-    return node;
-}
-
-void linkList(ListNode *node1, ListNode *node2){
-    if (node1 && node2) {
-        node1->next = node2;
-    }
-}
-
-void insertNode(ListNode *list, ListNode *node, int value){
-    if (list && node) {
-        ListNode *newNode = new ListNode();
-        newNode->value = value;
-        
-        newNode->next = node->next;
-        node->next = newNode;
-    }
-    
-}
-
-void delNode(ListNode *List, ListNode *delNode){
-    if (!List || !delNode) {
-        return;
-    }
-    
-    if (delNode->next != NULL) {
-        ListNode *node = delNode->next;
-        delNode->value = delNode->next->value;
-        delNode->next = node->next;
-        
-        delete node;
-        node = NULL;
-    }
-    else if (List == delNode) {
-        delete delNode;
-        delNode = NULL;
-        List = NULL;
-        
-    }
-    else {
-        ListNode *node = List;
-        while (node->next != delNode) {
-            node = node->next;
+    int array[] = {2,4,5,2,6,7,2};
+    int arrLength = sizeof(array)/sizeof(int);
+    int delNumber = 2;
+    int j = 0;
+    for (int i = 0; i < arrLength; i++) {
+        if (array[i] != delNumber) {
+            array[j] = array[i];
+            j++;
         }
         
-        node->next = NULL;
-        delete delNode;
-        delNode = NULL;
-        
     }
-}
-
-int main(){
-    ListNode *node1 = createListNode(1);
-    ListNode *node2 = createListNode(2);
-    ListNode *node3 = createListNode(3);
     
-    linkList(node1, node2);
-    linkList(node2, node3);
-    
-    insertNode(node1, node2, 6);
-    delNode(node1, node2);
-    
-    while (node1->next != NULL) {
-        printf("%d",node1->value);
-        node1 = node1->next;
+    for (int k = 0; k < j; k++) {
+        printf("%d \n",array[k]);
     }
-
-    printf("%d",node1->value);
+    return 0;
 }

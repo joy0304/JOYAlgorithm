@@ -15,7 +15,6 @@ using namespace std;
 using std::cout;
 
 void bubbleSort(int array[], int count){
-    
     bool sorted = false;
     
     while (!sorted) {

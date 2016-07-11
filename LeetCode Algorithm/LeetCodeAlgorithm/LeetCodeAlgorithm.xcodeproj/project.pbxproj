@@ -31,6 +31,7 @@
 		A8D04F3D1D07173900FF8F9A /* deleteNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8D04F3C1D07173900FF8F9A /* deleteNode.cpp */; };
 		A8E90D491CF8790E005DCC2E /* array_missingNumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */; };
 		A8EA2F181D33CA8C00CA6CB1 /* mergeSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8EA2F171D33CA8C00CA6CB1 /* mergeSort.cpp */; };
+		A8EA2F1A1D33DB2000CA6CB1 /* QuickSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8EA2F191D33DB2000CA6CB1 /* QuickSort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -71,6 +72,7 @@
 		A8D04F3C1D07173900FF8F9A /* deleteNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deleteNode.cpp; sourceTree = "<group>"; };
 		A8E90D481CF8790E005DCC2E /* array_missingNumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_missingNumber.cpp; sourceTree = "<group>"; };
 		A8EA2F171D33CA8C00CA6CB1 /* mergeSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mergeSort.cpp; sourceTree = "<group>"; };
+		A8EA2F191D33DB2000CA6CB1 /* QuickSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QuickSort.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				A842AB671D2EB562004FAB8B /* BubbleTest.cpp */,
 				A842AB6B1D2EBE1E004FAB8B /* InsertSort.cpp */,
 				A8EA2F171D33CA8C00CA6CB1 /* mergeSort.cpp */,
+				A8EA2F191D33DB2000CA6CB1 /* QuickSort.cpp */,
 			);
 			name = Sort;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 				1B61B3FA1CECB57C00537DFA /* Array_majorityElement.cpp in Sources */,
 				A8821C8C1CFC962200D500B7 /* array_swapPairs.cpp in Sources */,
 				A8D04F3D1D07173900FF8F9A /* deleteNode.cpp in Sources */,
+				A8EA2F1A1D33DB2000CA6CB1 /* QuickSort.cpp in Sources */,
 				A8828AD61D22B0A500206CAC /* minDepth.cpp in Sources */,
 				1B965B911CE8B16A00A02065 /* Array_removeDuplicates.cpp in Sources */,
 				A8037FD71D1AC78E00A94CE2 /* BinaryTree.cpp in Sources */,

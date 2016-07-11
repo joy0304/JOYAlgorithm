@@ -14,27 +14,29 @@
 using namespace std;
 using std::cout;
 
-struct ListNode{
-    int value;
-    ListNode *next;
-};
 
-int main(){
-    
-    int array[] = {2,4,5,2,6,7,2};
-    int arrLength = sizeof(array)/sizeof(int);
-    int delNumber = 2;
-    int j = 0;
-    for (int i = 0; i < arrLength; i++) {
-        if (array[i] != delNumber) {
-            array[j] = array[i];
-            j++;
-        }
-        
-    }
-    
-    for (int k = 0; k < j; k++) {
-        printf("%d \n",array[k]);
-    }
-    return 0;
-}
+
+//
+//void insertion_sort(int array[],int last)
+//{
+//    int i,j;
+//    int temp;
+//    for(i = 1;i<last;i++)
+//    {
+//        temp=array[i];
+//        j=i-1;
+//        //与已排序的数逐一比较，大于temp时，该数移后
+//        while((j>=0)&&(array[j]>temp))
+//        {
+//            array[j+1]=array[j];
+//            j--;
+//        }
+//        //存在大于temp的数
+//        //if(j!=i-1)
+//        //{
+//            array[j+1]=temp;
+//        //}
+//    }
+//    
+//}
+

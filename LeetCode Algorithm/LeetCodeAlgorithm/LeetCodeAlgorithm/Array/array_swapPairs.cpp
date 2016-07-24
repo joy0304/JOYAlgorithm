@@ -11,6 +11,15 @@ struct ListNode {
     ListNode *next;
 };
 
+ListNode* swapPair(ListNode* head) {
+    ListNode *next = head->next;
+    head->next = swapPair(next->next);
+    next->next = head;
+    
+    return next;
+}
+
+
 ListNode* swapPairs(ListNode* head) {
     if(head == NULL)
         return NULL;
@@ -20,7 +29,6 @@ ListNode* swapPairs(ListNode* head) {
     ListNode* next = head->next;
     head->next = swapPairs(next->next);
     next->next = head;
-    
     
     return next;
 }

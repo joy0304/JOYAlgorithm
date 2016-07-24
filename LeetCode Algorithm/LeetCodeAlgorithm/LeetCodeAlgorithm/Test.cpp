@@ -14,29 +14,15 @@
 using namespace std;
 using std::cout;
 
-
-
-//
-//void insertion_sort(int array[],int last)
-//{
-//    int i,j;
-//    int temp;
-//    for(i = 1;i<last;i++)
-//    {
-//        temp=array[i];
-//        j=i-1;
-//        //与已排序的数逐一比较，大于temp时，该数移后
-//        while((j>=0)&&(array[j]>temp))
-//        {
-//            array[j+1]=array[j];
-//            j--;
-//        }
-//        //存在大于temp的数
-//        //if(j!=i-1)
-//        //{
-//            array[j+1]=temp;
-//        //}
-//    }
-//    
-//}
-
+void sumOfBigData (string str1, string str2) {
+    
+    //  首先交换，选择出长字符串以及短串
+    
+    //  全部初始化 为 0
+    
+    // for 循环，最短完毕之后
+    
+    
+    
+    
+}

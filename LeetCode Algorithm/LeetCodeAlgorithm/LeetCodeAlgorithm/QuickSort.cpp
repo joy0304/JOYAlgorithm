@@ -8,23 +8,45 @@
 
 #include <stdio.h>
 
+//int partition(int arr[], int start, int end) {
+//    int i = start;
+//    int j = end;
+//    int x = arr[i];
+//    
+//    while (true) {
+//        while (arr[i] < x) {
+//            i++;
+//        }
+//        while (arr[j] > x) {
+//            j++;
+//        }
+//        
+//        if (i >= j) {
+//            break;
+//        }
+//        else {
+//            int temp = arr[i];
+//            arr[i] = arr[j];
+//            arr[j] = temp;
+//        }
+//    }
+//    arr[start] = arr[j];
+//    arr[j] = x;
+//    return j;
+//}
+//
+
 int partition(int arr[], int start, int end) {
-    int i = start;
+    int i = start + 1;
     int j = end;
     int x = arr[i];
     
     while (true) {
-        while (arr[i] < x) {
-            i++;
-        }
-        while (arr[j] > x) {
-            j++;
-        }
-        
-        if (i >= j) {
+        while (arr[++i] < x);
+        while (arr[j--] > x);
+        if (i>=j)
             break;
-        }
-        else {
+        else{
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
@@ -33,6 +55,7 @@ int partition(int arr[], int start, int end) {
     arr[start] = arr[j];
     arr[j] = x;
     return j;
+
 }
 
 

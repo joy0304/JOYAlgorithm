@@ -26,3 +26,7 @@ int missingNumber(vector<int>& nums) {
     result ^= nums.size();
     return result;
 }
+
+
+
+

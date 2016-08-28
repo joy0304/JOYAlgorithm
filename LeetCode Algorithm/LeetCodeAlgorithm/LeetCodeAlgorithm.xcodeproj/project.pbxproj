@@ -16,6 +16,7 @@
 		A8037FD71D1AC78E00A94CE2 /* BinaryTree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8037FD61D1AC78E00A94CE2 /* BinaryTree.cpp */; };
 		A80F7EE01D466C9D008DF968 /* SortStackByStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A80F7EDF1D466C9D008DF968 /* SortStackByStack.cpp */; };
 		A82B0CF21D620F4E00C8F68E /* SortedArrayIntersection.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A82B0CF11D620F4E00C8F68E /* SortedArrayIntersection.cpp */; };
+		A82B0CF41D62187400C8F68E /* deleteRepeatNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A82B0CF31D62187400C8F68E /* deleteRepeatNode.cpp */; };
 		A836B5461D3630C9001CC81C /* HeapSort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A836B5451D3630C9001CC81C /* HeapSort.cpp */; };
 		A842AB681D2EB562004FAB8B /* BubbleTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A842AB671D2EB562004FAB8B /* BubbleTest.cpp */; };
 		A842AB6A1D2EBB4F004FAB8B /* inverseList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A842AB691D2EBB4F004FAB8B /* inverseList.cpp */; };
@@ -23,6 +24,7 @@
 		A8593D551D450C6E0025CECD /* getMin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8593D541D450C6E0025CECD /* getMin.cpp */; };
 		A8593D571D4510E10025CECD /* StackQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8593D561D4510E10025CECD /* StackQueue.cpp */; };
 		A8593D591D451B230025CECD /* removeLastElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8593D581D451B230025CECD /* removeLastElement.cpp */; };
+		A86D499D1D733D6B00C981AC /* RemoveDuplicateInSortedArray.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A86D499C1D733D6B00C981AC /* RemoveDuplicateInSortedArray.cpp */; };
 		A8821C8A1CFB49BF00D500B7 /* array_mergeTwoLists.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8821C891CFB49BF00D500B7 /* array_mergeTwoLists.cpp */; };
 		A8821C8C1CFC962200D500B7 /* array_swapPairs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8821C8B1CFC962200D500B7 /* array_swapPairs.cpp */; };
 		A8828AD21D22A07C00206CAC /* intersect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A8828AD11D22A07C00206CAC /* intersect.cpp */; };
@@ -63,6 +65,7 @@
 		A8037FD61D1AC78E00A94CE2 /* BinaryTree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinaryTree.cpp; sourceTree = "<group>"; };
 		A80F7EDF1D466C9D008DF968 /* SortStackByStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortStackByStack.cpp; sourceTree = "<group>"; };
 		A82B0CF11D620F4E00C8F68E /* SortedArrayIntersection.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SortedArrayIntersection.cpp; sourceTree = "<group>"; };
+		A82B0CF31D62187400C8F68E /* deleteRepeatNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = deleteRepeatNode.cpp; sourceTree = "<group>"; };
 		A836B5451D3630C9001CC81C /* HeapSort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = HeapSort.cpp; sourceTree = "<group>"; };
 		A842AB671D2EB562004FAB8B /* BubbleTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BubbleTest.cpp; sourceTree = "<group>"; };
 		A842AB691D2EBB4F004FAB8B /* inverseList.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = inverseList.cpp; sourceTree = "<group>"; };
@@ -70,6 +73,7 @@
 		A8593D541D450C6E0025CECD /* getMin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = getMin.cpp; sourceTree = "<group>"; };
 		A8593D561D4510E10025CECD /* StackQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StackQueue.cpp; sourceTree = "<group>"; };
 		A8593D581D451B230025CECD /* removeLastElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = removeLastElement.cpp; sourceTree = "<group>"; };
+		A86D499C1D733D6B00C981AC /* RemoveDuplicateInSortedArray.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RemoveDuplicateInSortedArray.cpp; sourceTree = "<group>"; };
 		A8821C891CFB49BF00D500B7 /* array_mergeTwoLists.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_mergeTwoLists.cpp; sourceTree = "<group>"; };
 		A8821C8B1CFC962200D500B7 /* array_swapPairs.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = array_swapPairs.cpp; sourceTree = "<group>"; };
 		A8828AD11D22A07C00206CAC /* intersect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = intersect.cpp; path = ../intersect.cpp; sourceTree = "<group>"; };
@@ -142,6 +146,7 @@
 				A8821C891CFB49BF00D500B7 /* array_mergeTwoLists.cpp */,
 				A8821C8B1CFC962200D500B7 /* array_swapPairs.cpp */,
 				A82B0CF11D620F4E00C8F68E /* SortedArrayIntersection.cpp */,
+				A86D499C1D733D6B00C981AC /* RemoveDuplicateInSortedArray.cpp */,
 			);
 			path = Array;
 			sourceTree = "<group>";
@@ -196,6 +201,7 @@
 				A8D04F3C1D07173900FF8F9A /* deleteNode.cpp */,
 				A8C203101D0DB0AA00495A6A /* List.cpp */,
 				A842AB691D2EBB4F004FAB8B /* inverseList.cpp */,
+				A82B0CF31D62187400C8F68E /* deleteRepeatNode.cpp */,
 			);
 			name = "链表";
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 			files = (
 				A8593D591D451B230025CECD /* removeLastElement.cpp in Sources */,
 				1B61B3FA1CECB57C00537DFA /* Array_majorityElement.cpp in Sources */,
+				A86D499D1D733D6B00C981AC /* RemoveDuplicateInSortedArray.cpp in Sources */,
 				A8821C8C1CFC962200D500B7 /* array_swapPairs.cpp in Sources */,
 				A8D04F3D1D07173900FF8F9A /* deleteNode.cpp in Sources */,
 				A8EA2F1A1D33DB2000CA6CB1 /* QuickSort.cpp in Sources */,
@@ -295,6 +302,7 @@
 				A8821C8A1CFB49BF00D500B7 /* array_mergeTwoLists.cpp in Sources */,
 				A8828AD21D22A07C00206CAC /* intersect.cpp in Sources */,
 				A8D04F3B1D07148D00FF8F9A /* numberOf1.cpp in Sources */,
+				A82B0CF41D62187400C8F68E /* deleteRepeatNode.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

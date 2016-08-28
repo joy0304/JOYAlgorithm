@@ -23,10 +23,7 @@ void BubbleSort(int arrar[], int size) {
     }
 }
 
-
-
 // 二分查找
-
 int binarySearch(int array[], int target, int size) {
     int left = 0, right = size - 1;
     

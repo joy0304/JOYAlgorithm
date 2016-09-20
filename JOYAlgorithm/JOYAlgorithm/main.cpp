@@ -6,46 +6,55 @@
 //  Copyright © 2016年 Joy. All rights reserved.
 //
 
-#include <stdio.h>
-#include <unordered_map>
-#include <string.h>
+#include <stdlib.h>
 #include <iostream>
-#include <vector>
-#include <set>
 
 using namespace std;
 using std::cout;
-struct ListNode{
+
+
+struct ListNode {
     int value;
     ListNode *next;
-
 };
 
 
-ListNode *addTWoNumber (ListNode *L1, ListNode *L2) {
-
-    int carry = 0;
-
-    ListNode *list = new ListNode();
-    for (;
-         L1 != NULL;
-         L1 = L1->next == NULL ? NULL : L1->next,
-         L2 = L2->next == NULL ? NULL : L2->next) {
+ListNode *reverseBetween(ListNode *list, int m, int n) {
+    
+    ListNode *cur;// 存放当前位置
+    ListNode *pre = nullptr;// 存放反转前的位置
+    ListNode *next;// 下个位置
+    ListNode *reversehead;
+    ListNode * temp = nullptr;
+    
+    int index = 1;
+    while (cur != NULL) {
+        next = cur->next;
+        if (index < m) {
+            pre = cur;
+            cur = next;
+        }
+        if (index == m) {
+            reversehead = cur;
+            temp = cur;
+            cur = next;
+            
+        }
+        if (index > m && index < n) {
+            
+            cur->next = temp;
+            temp = cur;
+            cur = next;
+        }
+        if (index == n) {
+            cur->next = temp;
+            pre->next = cur;
+        }
         
-        int a = L1 == NULL ? 0 : L1->value;
-        int b = L2 == NULL ? 0 : L2->value;
-        
-        int value = (a + b + carry) % 10;
-        carry = (a +b +carry) / 10;
-        list->next = new ListNode();
-        list->next->value = value;
-    }
-    if (carry > 0) {
-        list->next = new ListNode();
-        list->next->value = carry;
     }
     return list;
 }
+
 int main(int argc, const char * argv[]) {
     // insert code here...
     std::cout << "Hello, World!\n";
